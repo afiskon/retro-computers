@@ -1,0 +1,16 @@
+Reference(s),Qty,Value,Footprint
+C1,1,82p,Capacitor_THT:C_Disc_D7.5mm_W4.4mm_P5.00mm
+"C2, C3",2,10u,Capacitor_THT:C_Disc_D7.5mm_W4.4mm_P5.00mm
+"C4, C11",2,22u,Capacitor_THT:CP_Radial_D7.5mm_P2.50mm
+"C6, C7, C8",3,68n,Capacitor_THT:C_Disc_D7.5mm_W4.4mm_P5.00mm
+"DD1, DD2",2,КР580ВИ53,Package_DIP:DIP-24_W15.24mm
+"R1, R12, R14",3,1K,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+"R2, R13",2,560,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+"R3, R4",2,220,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+"R5, R7, R8, R9, R10, R11",6,27K,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+R6,1,5K1,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+SW1,1,ПД11-5,My_Library:SW_PD11_5_DPDT
+U13,1,К155ЛА3,Package_DIP:DIP-14_W7.62mm_Socket_LongPads
+X1,1,СНП58-64,My_Library:SNP58_64_Male_Horizontal_THT
+X2,1,СГ-3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+ZQ1,1,1 MHz,Crystal:Crystal_HC51_Horizontal
