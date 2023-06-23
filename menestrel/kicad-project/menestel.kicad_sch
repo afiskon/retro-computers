@@ -6,8 +6,8 @@
 
   (title_block
     (title "Реплика \"Менестреля\" ::: https://eax.me/menestrel/")
-    (date "2023-06-18")
-    (rev "1")
+    (date "2023-06-23")
+    (rev "2")
   )
 
   (lib_symbols
@@ -2460,11 +2460,11 @@
     (uuid fd1af7d2-94e8-48d8-87d4-8ba3d9895c14)
   )
 
-  (text "СГ-3, пин 3" (at 257.81 73.025 0)
+  (text "СГ-5, пин 3" (at 257.81 73.025 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0fa2a3b2-af76-44c9-8598-e031f092a354)
   )
-  (text "СГ-3, пин 5" (at 258.445 96.52 0)
+  (text "СГ-5, пин 5" (at 258.445 96.52 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 644c1ea8-6ee8-45e6-966c-94a25bfebe40)
   )
