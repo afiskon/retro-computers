@@ -2464,7 +2464,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0fa2a3b2-af76-44c9-8598-e031f092a354)
   )
-  (text "СГ-5, пин 5" (at 258.445 96.52 0)
+  (text "СГ-5, пин 1" (at 258.445 96.52 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 644c1ea8-6ee8-45e6-966c-94a25bfebe40)
   )
