@@ -111,11 +111,12 @@ union() {
             hole_under_stand();
         translate([(-X + stand_d2)/2 + stand_x_off, (-Y + stand_d2)/2 + stand_y_off, 0])
             hole_under_stand();
-        
+        /* comment the lines below in order to remove the holes */
         translate([-X/2+din_offset, Y/2-din_offset, 0])
             din(100);
         translate([X/2-switch_hole_x_offset, Y/2-switch_hole_y_offset, 0])
             switch_hole(100);
+        /* comment the lines above in order to remove the holes */
     }
     
     translate([(X-holder_w)/2 - holder_x_off, (-Y+holder_t)/2+holder_y_off, (-Z+holder_h)/2+t-eps])
