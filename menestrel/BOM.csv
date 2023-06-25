@@ -1,6 +1,6 @@
 Reference(s),Qty,Value,Footprint
 C1,1,82p,Capacitor_THT:C_Disc_D7.5mm_W4.4mm_P5.00mm
-"C2, C3",2,10u,Capacitor_THT:C_Disc_D7.5mm_W4.4mm_P5.00mm
+"C2, C3",2,0.1u,Capacitor_THT:C_Disc_D7.5mm_W4.4mm_P5.00mm
 "C4, C11",2,22u,Capacitor_THT:CP_Radial_D7.5mm_P2.50mm
 "C6, C7, C8",3,68n,Capacitor_THT:C_Disc_D7.5mm_W4.4mm_P5.00mm
 "DD1, DD2",2,КР580ВИ53,Package_DIP:DIP-24_W15.24mm
