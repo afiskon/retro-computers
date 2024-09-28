@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """An Intel 8080 cross-assembler."""
 
 import argparse
