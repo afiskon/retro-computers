@@ -16,8 +16,8 @@ address = 0
 # This is a 2-pass assembler, so keep track of which pass we're in.
 source_pass = 1
 
-# Current number of a local label.
-next_local_label_no = 1
+# Current number of an anonymous label.
+next_anonymous_label_no = 1
 
 # Assembled machine code.
 output = b''
@@ -44,7 +44,7 @@ OUTFILE = 'program'
 
 def assemble(lines):
     """Assemble source lines."""
-    global lineno, source_pass, next_local_label_no
+    global lineno, source_pass, next_anonymous_label_no
 
     # The end Assembly directive raises StopIteration, which we catch and do
     # nothing so that instuction parsing and processing ends and execution can
@@ -58,7 +58,7 @@ def assemble(lines):
         pass
 
     source_pass = 2
-    next_local_label_no = 1
+    next_anonymous_label_no = 1
     try:
         for lineno, line in enumerate(lines):
             parse(line)
@@ -73,7 +73,7 @@ def assemble(lines):
 def parse(line):
     """Parse a source line."""
     global label, mnemonic, operand1, operand2, comment
-    global next_local_label_no
+    global next_anonymous_label_no
 
     label = ''
     mnemonic = ''
@@ -173,17 +173,17 @@ def parse(line):
     label = label.lower()
     mnemonic = mnemonic.lower()
 
-    if label.startswith("__local_label_"):
-        report_error(f'the prefix "__local_label_" is reserved')
+    if label.startswith("__anonymous_label_"):
+        report_error(f'the prefix "__anonymous_label_" is reserved')
     if label == "@@":
-        label = "__local_label_" + str(next_local_label_no)
-        next_local_label_no += 1
+        label = "__anonymous_label_" + str(next_anonymous_label_no)
+        next_anonymous_label_no += 1
 
     temp = operand1.lower()
     if temp == "@f":
-        operand1 = "__local_label_" + str(next_local_label_no)
+        operand1 = "__anonymous_label_" + str(next_anonymous_label_no)
     elif temp == "@b":
-        operand1 = "__local_label_" + str(next_local_label_no - 1)
+        operand1 = "__anonymous_label_" + str(next_anonymous_label_no - 1)
 
     return label, mnemonic, operand1, operand2, comment
 
@@ -1290,7 +1290,7 @@ def immediate_operand(operand_type=IMMEDIATE8):
 # symbol table as pass 1 isn't handled.
 def address16():
     """Generate code for 16-bit addresses."""
-    global output, next_local_label_no
+    global output, next_anonymous_label_no
 
     if operand1[0].isdigit():
         number = get_number(operand1)
