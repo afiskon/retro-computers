@@ -6,8 +6,7 @@
 
 	; Заголовок LVT файла общим размером 16+3*2 байт
 	; Этих данных реально не будет в программе
-
-	db 'ISKRA1080', 0D0h, 'ZMEJKA'
+	db 'LVOV/2.0/', 0D0h, 'ZMEJKA'
 	dw entry
 	dw code_end
 	dw entry
